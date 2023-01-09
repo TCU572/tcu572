@@ -5,7 +5,7 @@ const btn = document.querySelector("#button");
 
 btn.addEventListener("click",
   function checkPassword() {
-    var password = "tcu572";
+    var password = "TCU572";
     var textpassword = document.getElementById("textPassword").value;
 
     if(password == textpassword){
