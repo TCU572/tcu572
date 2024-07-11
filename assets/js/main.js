@@ -11,7 +11,7 @@ btn.addEventListener("click",
     if(password == textpassword){
       window.open("/documents/documents.html")
     } else {
-      alert("Contraseña incorrecta. Intente de nuevo.");
+      alert("Contraseña incorrecta. Inténtelo de nuevo.");
     }
   });
 
