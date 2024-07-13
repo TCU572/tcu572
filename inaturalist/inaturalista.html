@@ -205,13 +205,20 @@
               <a type="button" class="btn-floating btn-lg btn-email text-white" id="openModalLink">
 		      <i class="fa fa-envelope"></i>
 	      </a>
-		    
+    
 <!-- Estructura del Modal -->
-    		<div id="myModal" class="modal">
-        	<div class="modal-content">
-            	<span class="close">&times;</span>
-            		<h2>Más Información</h2>
-            		<p>Aquí puedes colocar la información adicional que desees.</p>
+    		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>SUSCRIBETE</h3>
+				<h4>y recibe un cupon de descuento.</h4>
+				<form action="">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre">
+						<input type="email" placeholder="Correo">
+					</div>
+					<input type="submit" class="btn-submit" value="Suscribirse">
+				</form>
 		></i></a>    		
             </div>
           </div>
