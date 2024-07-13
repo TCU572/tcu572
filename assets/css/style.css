@@ -5,6 +5,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #445;
+.text-black {
+    color: black;
+}
 }
 
 a {
