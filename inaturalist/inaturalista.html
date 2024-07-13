@@ -202,20 +202,22 @@
               <a type="button" href="https://www.youtube.com/channel/UClyI88wlVuh9kv5kgffOfAg" class="btn-floating btn-lg btn-yt.play text-white"><i class="fa fa-youtube-play"
               ></i></a>
 		    
-              <a type="button" class="btn-floating btn-lg btn-email btn-abrir-popup text-white " id="btn-abrir-popup"><i class="fa fa-envelope">
-		    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="overlay" id="overlay">  
-		   		 <div class="popup" id="popup">
-   				 <div class="popup-content">
-     			 	<span class="close-btn" id="close-popup">&times;</span>  		
-					<h3>Para má información</h3>
-				<form action="">
-				<div class="contenedor-inputs">
-					<input type="text" placeholder="Nombre">
-					<input type="email" placeholder="Correo">
+              <a type="button" class="btn-floating btn-lg btn-email btn-abrir-popup text-white " id="btn-abrir-popup" class="btn-abrir-popup"><i class="fa fa-envelope">
+			<div class="overlay" id="overlay">
+				<div class="popup" id="popup">
+					<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+					<h3>Más información</h3>
+					<form action="">
+						<div class="contenedor-inputs">
+							<input type="text" placeholder="Nombre">
+							<input type="email" placeholder="Correo">
+						</div>
+					<input type="submit" class="btn-submit" value="Suscribirse">
 				</div>
-			<input type="submit" class="btn-submit" value="Enviar"></form>
+			 </div>
+		<script src="popup.js"></script>    
 		</i></a>
+		    
 	    </div>
           </div>
         </div>
