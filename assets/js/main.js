@@ -224,18 +224,3 @@ btn.addEventListener("click",
 
 })(jQuery);
 
-function openEmailPopup() {
-  document.getElementById("emailPopup").style.display = "block";
-}
-
-function closeEmailPopup() {
-  document.getElementById("emailPopup").style.display = "none";
-}
-
-document.getElementById("emailForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  const email = document.getElementById("email").value;
-  console.log("Email submitted: " + email);
-  // Aquí puedes agregar la lógica para enviar el correo electrónico a tu servidor
-  closeEmailPopup();
-});
