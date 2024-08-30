@@ -580,7 +580,7 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
+  text-align: left justify;
   font-style: normal;
   color: #666;
 }
@@ -639,6 +639,7 @@ section {
   margin-left: 100px;
   line-height: 24px;
   font-size: 14px;
+  text-align: justify;
 
 }
 
