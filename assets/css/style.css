@@ -589,6 +589,8 @@ section {
   text-align: justify;
   font-style: normal;
   color: #666;
+  margin-left: 82px;
+  line-height: 24px;
 }
 
 .about .about-content {
@@ -604,8 +606,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 72px;
+  width: 82px;
+  height: 82px;
   background: #f1f7fb;
   border-radius: 6px;
   transition: 0.5s;
