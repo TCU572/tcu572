@@ -572,7 +572,7 @@ section {
 }
 
 .about .container {
-  box-shadow: 0 5px 25px 0 rgba(60, 179, 113, 0.6);
+  box-shadow: 0 5px 15px 0 rgba(60, 179, 113, 0.6);
 }
 
 .about .video-box img {
@@ -586,7 +586,7 @@ section {
 }
 
 .about .about-content {
-  padding: 40px;
+  padding: 30px;
 }
 
 .about .icon-box + .icon-box {
@@ -636,10 +636,11 @@ section {
 }
 
 .about .icon-box .description {
+  text-align: justify;
   margin-left: 100px;
   line-height: 26px;
   font-size: 14px;
-  text-align: justify;
+  
 
 }
 
