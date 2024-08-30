@@ -578,7 +578,7 @@ section {
 }
 
 .about .container {
-  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  box-shadow: 0 5px 25px 0 rgba(60, 179, 113, 0.6);
 }
 
 .about .video-box img {
@@ -586,8 +586,8 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
-  font-style: italic;
+  text-align: justify;
+  font-style: normal;
   color: #666;
 }
 
@@ -625,7 +625,7 @@ section {
 }
 
 .about .icon-box .title {
-  margin-left: 95px;
+  margin-left: 100px;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 18px;
@@ -642,9 +642,11 @@ section {
 }
 
 .about .icon-box .description {
-  margin-left: 95px;
+  margin-left: 100px;
   line-height: 24px;
   font-size: 14px;
+  text-align: justify
+
 }
 
 .about .video-box {
