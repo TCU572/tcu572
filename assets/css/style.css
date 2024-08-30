@@ -576,7 +576,7 @@ section {
 }
 
 .about .video-box img {
-  padding: 10px 0;
+  padding: 1em;
 }
 
 .about .section-title p {
@@ -645,8 +645,8 @@ section {
 }
 
 .about .video-box {
-   position: sticky;
-   top: 20px;
+   position: relative;
+   top: 30px;
 }
 
 .about .play-btn {
