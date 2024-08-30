@@ -591,7 +591,7 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .about .icon-box .icon {
@@ -599,7 +599,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 82px;
+  width: 72px;
   height: 82px;
   background: #f1f7fb;
   border-radius: 6px;
@@ -608,7 +608,7 @@ section {
 
 .about .icon-box .icon i {
   color: #428bca;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 .about .icon-box:hover .icon {
