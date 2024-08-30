@@ -13,13 +13,6 @@ btn.addEventListener("click",
     } else {
       alert("Contraseña incorrecta. Inténtelo de nuevo.");
     }
-    // Video contenedor
-document.addEventListener('DOMContentLoaded', function() {
-    const closeButton = document.getElementById('close-button');
-    const videoContainer = document.getElementById('video-container');
-
-    closeButton.addEventListener('click', function() {
-        videoContainer.style.display = 'none';
   });
 
   // Toggle .header-scrolled class to #header when page is scrolled
@@ -71,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return false;
       }
+    }
   });
 
   // Activate smooth scroll on page load with hash links in the url
@@ -84,6 +78,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500, 'easeInOutExpo');
       }
     }
+  });
+  
+ // botón de cierre que oculta el contenedor del video
+    document.addEventListener('DOMContentLoaded', function() {
+      const closeButton = document.getElementById('close-button');
+      const videoContainer = document.getElementById('video-container');
+
+    closeButton.addEventListener('click', function() {
+        videoContainer.style.display = 'none';
 });
   
   // Mobile Navigation
