@@ -580,7 +580,7 @@ section {
 }
 
 .about .section-title p {
-  text-align: left justify;
+  text-align: justify;
   font-style: normal;
   color: #666;
 }
@@ -639,13 +639,13 @@ section {
   margin-left: 100px;
   line-height: 24px;
   font-size: 14px;
-  text-align: justify;
+  
 
 }
 
 .about .video-box {
-  position: relative;
-  margin: 15px
+   position: sticky;
+   top: 20px;
 }
 
 .about .play-btn {
