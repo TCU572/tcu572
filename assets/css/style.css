@@ -576,7 +576,7 @@ section {
 }
 
 .about .video-box img {
- padding: 10px 20px 10px 0;
+ padding: 10px 60px 10px 1em;
 }
 
 .about .section-title p {
@@ -590,7 +590,7 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .about .icon-box .icon {
@@ -646,7 +646,6 @@ section {
 
 .about .video-box {
    position: relative;
-   top: 40px;
 }
 
 .about .play-btn {
