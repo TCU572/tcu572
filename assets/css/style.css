@@ -22,7 +22,13 @@ a:hover {
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
-
+.mi-parrafo {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -572,16 +578,16 @@ section {
 }
 
 .about .container {
-  box-shadow: 0 5px 45px 0 rgba(60, 179, 113, 0.6);
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
 }
 
 .about .video-box img {
- padding: 15px 0;
+  padding: 15px 0;
 }
 
 .about .section-title p {
-  text-align: justify;
-  font-style: normal;
+  text-align: left;
+  font-style: italic;
   color: #666;
 }
 
@@ -590,7 +596,7 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .about .icon-box .icon {
@@ -607,7 +613,7 @@ section {
 
 .about .icon-box .icon i {
   color: #428bca;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
@@ -636,16 +642,13 @@ section {
 }
 
 .about .icon-box .description {
-  text-align: justify;
-  margin-left: 100px;
-  line-height: 26px;
+  margin-left: 95px;
+  line-height: 24px;
   font-size: 14px;
-  
-
 }
 
 .about .video-box {
-   position: relative;
+  position: relative;
 }
 
 .about .play-btn {
