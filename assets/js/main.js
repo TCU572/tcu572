@@ -65,6 +65,14 @@ btn.addEventListener("click",
         return false;
       }
     }
+    // Video contenedor
+document.addEventListener('DOMContentLoaded', function() {
+    const closeButton = document.getElementById('close-button');
+    const videoContainer = document.getElementById('video-container');
+
+    closeButton.addEventListener('click', function() {
+        videoContainer.style.display = 'none';
+
   });
 
   // Activate smooth scroll on page load with hash links in the url
@@ -78,14 +86,6 @@ btn.addEventListener("click",
         }, 1500, 'easeInOutExpo');
       }
     }
-    
- // botón de cierre que oculta el contenedor del video
-document.addEventListener('DOMContentLoaded', function() {
-    const closeButton = document.getElementById('close-button');
-    const videoContainer = document.getElementById('video-container');
-
-    closeButton.addEventListener('click', function() {
-        videoContainer.style.display = 'none';
 });
   
   // Mobile Navigation
