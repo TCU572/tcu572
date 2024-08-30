@@ -576,12 +576,12 @@ section {
 }
 
 .about .video-box img {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .about .section-title p {
   text-align: left;
-  font-style: italic;
+  font-style: normal;
   color: #666;
 }
 
