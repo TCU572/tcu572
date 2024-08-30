@@ -13,6 +13,13 @@ btn.addEventListener("click",
     } else {
       alert("Contraseña incorrecta. Inténtelo de nuevo.");
     }
+    // Video contenedor
+document.addEventListener('DOMContentLoaded', function() {
+    const closeButton = document.getElementById('close-button');
+    const videoContainer = document.getElementById('video-container');
+
+    closeButton.addEventListener('click', function() {
+        videoContainer.style.display = 'none';
   });
 
   // Toggle .header-scrolled class to #header when page is scrolled
@@ -64,15 +71,6 @@ btn.addEventListener("click",
         }
         return false;
       }
-    }
-    // Video contenedor
-document.addEventListener('DOMContentLoaded', function() {
-    const closeButton = document.getElementById('close-button');
-    const videoContainer = document.getElementById('video-container');
-
-    closeButton.addEventListener('click', function() {
-        videoContainer.style.display = 'none';
-
   });
 
   // Activate smooth scroll on page load with hash links in the url
