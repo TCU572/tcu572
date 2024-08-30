@@ -590,7 +590,7 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .about .icon-box .icon {
@@ -607,7 +607,7 @@ section {
 
 .about .icon-box .icon i {
   color: #428bca;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .about .icon-box:hover .icon {
@@ -636,13 +636,15 @@ section {
 }
 
 .about .icon-box .description {
-  margin-left: 95px;
+  margin-left: 100px;
   line-height: 24px;
   font-size: 14px;
+
 }
 
 .about .video-box {
   position: relative;
+  margin: 15px
 }
 
 .about .play-btn {
