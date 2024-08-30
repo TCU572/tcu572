@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero .carousel-inner .carousel-item-next.carousel-item-left,
 #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 #hero .carousel-inner .carousel-item-next,
