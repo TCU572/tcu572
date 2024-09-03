@@ -223,41 +223,5 @@ btn.addEventListener("click",
     aos_init();
   });
   
-// botones 4-5-6 //
-document.addEventListener('DOMContentLoaded', () => {
-    const modalBtns = document.querySelectorAll('.modal-btn');
-    const modals = document.querySelectorAll('.modal');
-    const closeBtns = document.querySelectorAll('.close');
 
-    modalBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const modalId = `modalp${btn.id.slice(-1)}`;
-            document.getElementById(modalId).style.display = 'flex';
-            setTimeout(() => {
-                document.querySelector(`#${modalId} .modal-contentp`).classList.add('show');
-            }, 10);
-        });
-    });
-
-    closeBtns.forEach(close => {
-        close.addEventListener('click', () => {
-            const modal = close.parentElement.parentElement;
-            modal.querySelector('.modal-content').classList.remove('show');
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 500); // Tiempo de la transición de escala
-        });
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target.classList.contains('modal')) {
-            event.target.querySelector('.modal-content').classList.remove('show');
-            setTimeout(() => {
-                event.target.style.display = 'none';
-            }, 500); // Tiempo de la transición de escala
-        }
-    });
-});
-
-  
 })(jQuery);
