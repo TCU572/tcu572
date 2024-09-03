@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+        .titulo-movible {
+            font-size: 4em; /* Tamaño grande del texto */
+            color: green; /* Color verde */
+            text-align: center; /* Centra el texto */
+            animation: mover 5s infinite; /* Animación para mover el texto */
+        }
 
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -117,58 +130,7 @@
         </div>
       </div>
     </div>
-<img src="../assets/img/naturalista/naturalista1.png" class="img-fluid" alt="Responsive image">
-  <main id="main">
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about" style="background-color: rgb(184, 237, 171);">
-      <div class="container">
-
-<!-- Botón que abre el modal -->
-	<a type="button" class="btn1" data-toggle="modal" data-target="#exampleModal3" class="text-black">
-   	 ¿Qué es la ciencia ciudadana?
-	</a>
-
-<!-- Modal 3 -->
-<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                    <i class="text-black">¿Qué es la ciencia ciudadana?</i>
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</div> 
-    </section><!-- End About Us Section -->
-      <section id="aniversary" class="portfolio section-bg" style="background-color: white;">
-            <img src="../assets/img/naturalista/inaturalist3.jpg" class="img-fluid" alt="Responsive image">
-      </section>
-      <section id="aniversary" class="portfolio section-bg" style="background-color: white;">
-          <img src="../assets/img/naturalista/inaturalist4.jpg" class="img-fluid" alt="Responsive image">
-      </section>
-      <section id="aniversary" class="portfolio section-bg" style="background-color: white;">
-        <img src="../assets/img/naturalista/inaturalist5.jpg" class="img-fluid" alt="Responsive image">
-      </section>
-    
-    
-    <!-- ======= Our Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>BioZA: Biodiversidad en la Zona de Amortiguamiento de la Reserva Biológica Alberto Manuel Brenes</h2>
-          <p>¡Se les invita a unirse al Proyecto BioZA!</p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a href="https://www.inaturalist.org/projects/bioza-biodiversidad-en-la-zona-de-amortiguamiento-de-la-reserva-biologica-alberto-manuel-brenes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">ÚNETE A NUESTRO PROYECTO</a>
-        </div>
-      </div>
-    </section><!-- End Our Portfolio Section -->
-
+	<h1 class="titulo-movible">¡Este es un título grande!</h1>	
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
