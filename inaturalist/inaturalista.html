@@ -13,78 +13,8 @@
             50% { transform: translateX(50px); }
             100% { transform: translateX(0); }
         }
-/* Rectángulo con Botones y Modales */
-	  
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        .rectangulo {
-            background-color: #a8d5ba; /* Verde claro */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            text-align: center;
-        }
-
-        .boton {
-            display: block;
-            margin: 10px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #4caf50; /* Verde oscuro */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .boton:hover {
-            background-color: #45a049; /* Verde más oscuro */
-        }
-
-        .modal {
-            display: none; 
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-        }
-
-        .modal-contenido {
-            background-color: #fff;
-            margin: 15% auto;
-            padding: 20px;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 500px;
-        }
-
-        .cerrar {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .cerrar:hover,
-        .cerrar:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
     </style>
+	
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -202,39 +132,33 @@
       </div>
     </div>
 	<h1 class="titulo-movible">Ciencia Ciudadana</h1>	
-	 <div class="rectangulo">
-        <button class="boton" onclick="openModal('modal4')">Abrir Modal 4</button>
-        <button class="boton" onclick="openModal('modal5')">Abrir Modal 5</button>
-        <button class="boton" onclick="openModal('modal6')">Abrir Modal 6</button>
-    </div>
-
-    <!-- Modal 4 -->
-    <div id="modal4" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="closeModal('modal4')">&times;</span>
-            <h2>Contenido Modal 4</h2>
-            <p>Este es el contenido del primer modal.</p>
+	<div class="container2">   
+		<button class="modal-btn" id="btn4">Botón 4</button>
+       		<button class="modal-btn" id="btn5">Botón 5</button>
+        	<button class="modal-btn" id="btn6">Botón 6</button>
+  
+     <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close4">&times;</span>
+            <p>Información para Botón 4</p>
         </div>
     </div>
 
-    <!-- Modal 2 -->
     <div id="modal5" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="closeModal('modal5')">&times;</span>
-            <h2>Contenido Modal 5</h2>
-            <p>Este es el contenido del segundo modal.</p>
+        <div class="modal-content">
+            <span class="close" id="close5">&times;</span>
+            <p>Información para Botón 5</p>
         </div>
     </div>
 
-    <!-- Modal 3 -->
     <div id="modal6" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar" onclick="closeModal('modal6')">&times;</span>
-            <h2>Contenido Modal 6</h2>
-            <p>Este es el contenido del tercer modal.</p>
+        <div class="modal-content">
+            <span class="close" id="close6">&times;</span>
+            <p>Información para Botón 6</p>
         </div>
     </div>
 
+    </div>
   </main><!-- End #main -->
 <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -328,24 +252,6 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
-						
-  <!-- Botones -->						
- <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        }
-    </script>
-
 </body>
 
 </html>
