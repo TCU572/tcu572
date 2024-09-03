@@ -1749,37 +1749,39 @@ body {
 	}
 	
 /*Botones */
-}
-	.contenedor-botones {
-	    background-color: #DFF2E1; /* Verde claro */
-	    padding: 20px;
-	    text-align: center;
-}
+        .contenedor-botones {
+            background-color: #ccffcc; /* Verde claro */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-	.boton-cuadrado {
-	    width: 100px;
-	    height: 100px;
-	    background-color: #A4D4AE; /* Verde menta */
-	    color: white;
-	    border: none;
-	    margin: 10px;
-	    border-radius: 5px;
-	    font-size: 18px;
-	    cursor: pointer;
-	    transition: transform 0.2s;
-}
+        .boton-cuadrado {
+            width: 100px;
+            height: 100px;
+            background-color: #66ffcc; /* Verde menta */
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
 
-	.boton-cuadrado:hover {
-	    transform: scale(1.1);
-}
+        .boton-cuadrado:hover {
+            transform: scale(1.1);
+        }
 
-	.modal-animacion .modal-content {
-	    transform: scale(0.7); /* Empieza pequeño */
-	    animation: crecer 0.3s forwards; /* Animación al abrir */
-}
+        .modal-animacion .modal-dialog {
+            transform: scale(0.1);
+            transition: transform 0.5s ease;
+        }
 
-	@keyframes crecer {
-	    to {
-	        transform: scale(1); /* Termina en tamaño normal */
+        .modal-animacion.show .modal-dialog {
+            transform: scale(1);
+        }
     }
 }
