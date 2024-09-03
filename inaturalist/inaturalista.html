@@ -131,9 +131,41 @@
       </div>
     </div>
 	<h1 class="titulo-movible">Ciencia Ciudadana</h1>	
-  </main><!-- End #main -->
+	 <div class="rectangulo">
+        <button class="boton" onclick="openModal('modal4')">Abrir Modal 4</button>
+        <button class="boton" onclick="openModal('modal5')">Abrir Modal 5</button>
+        <button class="boton" onclick="openModal('modal6')">Abrir Modal 6</button>
+    </div>
 
-  <!-- ======= Footer ======= -->
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal4')">&times;</span>
+            <h2>Contenido Modal 4</h2>
+            <p>Este es el contenido del primer modal.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal5" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal5')">&times;</span>
+            <h2>Contenido Modal 5</h2>
+            <p>Este es el contenido del segundo modal.</p>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal6" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal6')">&times;</span>
+            <h2>Contenido Modal 6</h2>
+            <p>Este es el contenido del tercer modal.</p>
+        </div>
+    </div>
+
+  </main><!-- End #main -->
+<!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
