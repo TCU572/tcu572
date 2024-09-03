@@ -1735,3 +1735,16 @@ body {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
+/*Ciencia */
+        .titulo-movible {
+            font-size: 4em; /* Tamaño grande del texto */
+            color: green; /* Color verde */
+            text-align: center; /* Centra el texto */
+            animation: mover 5s infinite; /* Animación para mover el texto */
+        }
+
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
