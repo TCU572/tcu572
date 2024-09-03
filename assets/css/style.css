@@ -1748,40 +1748,5 @@ body {
             100% { transform: translateX(0); }
 	}
 	
-/*Botones */
-        .contenedor-botones {
-            background-color: #ccffcc; /* Verde claro */
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
 
-        .boton-cuadrado {
-            width: 100px;
-            height: 100px;
-            background-color: #66ffcc; /* Verde menta */
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease;
-        }
-
-        .boton-cuadrado:hover {
-            transform: scale(1.1);
-        }
-
-        .modal-animacion .modal-dialog {
-            transform: scale(0.1);
-            transition: transform 0.5s ease;
-        }
-
-        .modal-animacion.show .modal-dialog {
-            transform: scale(1);
-        }
-    }
 }
