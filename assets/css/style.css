@@ -1735,10 +1735,3 @@ body {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
-/*Ciencia */
-.titulo-verde {
-            color: green;
-            font-size: 72px; /* Puedes ajustar el tamaño según tus necesidades */
-            text-align: center; /* Centrar el título */
-            font-family: Arial, sans-serif; /* Elegir una fuente para el título */
-}
