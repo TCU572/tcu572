@@ -231,10 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            const modalId = `modal${btn.id.slice(-1)}`;
+            const modalId = `modalp${btn.id.slice(-1)}`;
             document.getElementById(modalId).style.display = 'flex';
             setTimeout(() => {
-                document.querySelector(`#${modalId} .modal-content`).classList.add('show');
+                document.querySelector(`#${modalId} .modal-contentp`).classList.add('show');
             }, 10);
         });
     });
