@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -889,7 +888,26 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+/*--------------------------------------------------------------
+# Ciencia
+--------------------------------------------------------------*/
+        .titulo-verde {
+            color: green;
+            font-size: 72px; /* Ajusta el tamaño según tus necesidades */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            position: relative; /* Necesario para el movimiento */
+            animation: movimiento 3s infinite alternate ease-in-out;
+        }
 
+        @keyframes movimiento {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 20px; /* Puedes ajustar la cantidad de movimiento */
+            }
+        }
 /*--------------------------------------------------------------
 # Our Portfolio
 --------------------------------------------------------------*/
