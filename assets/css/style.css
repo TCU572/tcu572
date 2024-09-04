@@ -1607,95 +1607,9 @@ body {
 /* ------------------------- */
 /* Ciencias */
 /* ------------------------- */
-	/* Estilo del nuevo contenedor */
-#nuevo-contenedor {
-    background-color: #ccffcc; /* Verde claro */
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto; /* Espaciado adicional para separarlo de otros elementos */
-}
 
-/* Estilo de los nuevos botones */
-.boton-menta-nuevo {
-    background-color: #98ff98; /* Verde menta */
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
 
-.boton-menta-nuevo:hover {
-    background-color: #76d976;
-}
-
-/* Estilos generales de las nuevas cajas modales */
-.modal-nueva {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1001; /* Asegúrate de que tenga un z-index alto para que esté por encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
-}
-
-.modal-content-nueva {
-    background-color: white;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    text-align: center;
-    animation: aparecer 0.5s;
-}
-
-.close-nueva {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-nueva:hover,
-.close-nueva:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Animación para mostrar la caja modal */
-@keyframes aparecer {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* Estilos específicos para cada nueva caja modal */
-.modal1 .modal-content-nueva {
-    background-color: #ffcccc; /* Rosa claro */
-}
-
-.modal2 .modal-content-nueva {
-    background-color: #ccffcc; /* Verde claro */
-}
-
-.modal3 .modal-content-nueva {
-    background-color: #ccccff; /* Azul claro */
-}
-
+	
 /* ------------------------- */
 /* POPUP */
 /* ------------------------- */
