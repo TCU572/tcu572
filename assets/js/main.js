@@ -223,6 +223,48 @@ btn.addEventListener("click",
     aos_init();
   });
     }
+document.addEventListener('DOMContentLoaded', function() {
+    const btn4 = document.getElementById('btn4');
+    const btn5 = document.getElementById('btn5');
+    const btn6 = document.getElementById('btn6');
+    const modal4 = document.getElementById('modal4');
+    const modal5 = document.getElementById('modal5');
+    const modal6 = document.getElementById('modal6');
+    const close4 = document.getElementById('close4');
+    const close5 = document.getElementById('close5');
+    const close6 = document.getElementById('close6');
 
+    btn4.onclick = function() {
+        modal4.style.display = 'block';
+    }
+    btn5.onclick = function() {
+        modal5.style.display = 'block';
+    }
+    btn6.onclick = function() {
+        modal6.style.display = 'block';
+    }
+
+    close4.onclick = function() {
+        modal4.style.display = 'none';
+    }
+    close5.onclick = function() {
+        modal5.style.display = 'none';
+    }
+    close6.onclick = function() {
+        modal6.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal4) {
+            modal4.style.display = 'none';
+        }
+        if (event.target === modal5) {
+            modal5.style.display = 'none';
+        }
+        if (event.target === modal6) {
+            modal6.style.display = 'none';
+        }
+    }
+});
 }
 })(jQuery);
