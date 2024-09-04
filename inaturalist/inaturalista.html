@@ -17,6 +17,93 @@
             100% {
                 top: 20px; /* Puedes ajustar la cantidad de movimiento */
             }
+ /* Estilo del nuevo contenedor */
+        #nuevo-contenedor {
+            background-color: #ccffcc; /* Verde claro */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto; /* Espaciado adicional para separarlo de otros elementos */
+        }
+  /* Estilo de los nuevos botones */
+        .boton-menta-nuevo {
+            background-color: #98ff98; /* Verde menta */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-menta-nuevo:hover {
+            background-color: #76d976;
+        }
+
+        /* Estilos generales de las nuevas cajas modales */
+        .modal-nueva {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content-nueva {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            animation: aparecer 0.5s;
+        }
+
+        .close-nueva {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-nueva:hover,
+        .close-nueva:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Animación para mostrar la caja modal */
+        @keyframes aparecer {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        /* Estilos específicos para cada nueva caja modal */
+        .modal4 .modal-content-nueva {
+            background-color: #ffcccc; /* Rosa claro */
+        }
+
+        .modal5 .modal-content-nueva {
+            background-color: #ccffcc; /* Verde claro */
+        }
+
+        .modal6 .modal-content-nueva {
+            background-color: #ccccff; /* Azul claro */
+        }
 </style>
 <head>
   <meta charset="utf-8">
@@ -136,8 +223,96 @@
       </div>
     </div>
 	<h1 class="titulo-verde">Ciencia Cuidadana</h1>
+		</div>
+        </div>
+		<div id="nuevo-contenedor">
+		    <button class="boton-menta-nuevo" id="boton4-nuevo">Botón 4</button>
+		    <button class="boton-menta-nuevo" id="boton5-nuevo">Botón 5</button>
+		    <button class="boton-menta-nuevo" id="boton6-nuevo">Botón 6</button>
+		</div>
 
-  </main><!-- End #main -->
+<!-- Nueva Caja Modal 4 -->
+<div id="modal4-nueva" class="modal-nueva modal4">
+    <div class="modal-content-nueva">
+        <span class="close-nueva" id="close1-nueva">&times;</span>
+        <p>Contenido de la Modal 4</p>
+    </div>
+</div>
+
+<!-- Nueva Caja Modal 4 -->
+<div id="modal4-nueva" class="modal-nueva modal5">
+    <div class="modal-content-nueva">
+        <span class="close-nueva" id="close2-nueva">&times;</span>
+        <p>Contenido de la Modal 2</p>
+    </div>
+</div>
+
+<!-- Nueva Caja Modal 6 -->
+<div id="modal6-nueva" class="modal-nueva modal6">
+    <div class="modal-content-nueva">
+        <span class="close-nueva" id="close3-nueva">&times;</span>
+        <p>Contenido de la Modal 3</p>
+    </div>
+</div>
+<script>
+    // Obtener los nuevos botones
+    var boton4Nuevo = document.getElementById("boton4-nuevo");
+    var boton5Nuevo = document.getElementById("boton5-nuevo");
+    var boton6Nuevo = document.getElementById("boton6-nuevo");
+
+    // Obtener las nuevas cajas modales
+    var modal4Nueva = document.getElementById("modal4-nueva");
+    var modal5Nueva = document.getElementById("modal5-nueva");
+    var modal6Nueva = document.getElementById("modal6-nueva");
+
+    // Obtener los nuevos elementos de cierre
+    var close1Nueva = document.getElementById("close1-nueva");
+    var close2Nueva = document.getElementById("close2-nueva");
+    var close3Nueva = document.getElementById("close3-nueva");
+
+    // Abrir la nueva modal 1
+    boton1Nuevo.onclick = function() {
+        modal1Nueva.style.display = "block";
+    }
+
+    // Abrir la nueva modal 2
+    boton2Nuevo.onclick = function() {
+        modal2Nueva.style.display = "block";
+    }
+
+    // Abrir la nueva modal 3
+    boton3Nuevo.onclick = function() {
+        modal3Nueva.style.display = "block";
+    }
+
+    // Cerrar la nueva modal 1
+    close1Nueva.onclick = function() {
+        modal1Nueva.style.display = "none";
+    }
+
+    // Cerrar la nueva modal 2
+    close2Nueva.onclick = function() {
+        modal2Nueva.style.display = "none";
+    }
+
+    // Cerrar la nueva modal 3
+    close3Nueva.onclick = function() {
+        modal3Nueva.style.display = "none";
+    }
+
+    // Cerrar las nuevas modales si se hace clic fuera de ellas
+    window.onclick = function(event) {
+        if (event.target == modal4Nueva) {
+            modal4Nueva.style.display = "none";
+        } else if (event.target == modal5Nueva) {
+            modal5Nueva.style.display = "none";
+        } else if (event.target == modal6Nueva) {
+            modal6Nueva.style.display = "none";
+        }
+    }
+</script>
+
+</main><!-- End #main -->
 <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
