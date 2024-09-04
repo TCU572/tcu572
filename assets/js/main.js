@@ -223,4 +223,56 @@ btn.addEventListener("click",
     aos_init();
   });
     }
+  
+// Obtener los nuevos botones
+var boton1Nuevo = document.getElementById("boton1-nuevo");
+var boton2Nuevo = document.getElementById("boton2-nuevo");
+var boton3Nuevo = document.getElementById("boton3-nuevo");
+
+// Obtener las nuevas cajas modales
+var modal1Nueva = document.getElementById("modal1-nueva");
+var modal2Nueva = document.getElementById("modal2-nueva");
+var modal3Nueva = document.getElementById("modal3-nueva");
+
+// Obtener los nuevos elementos de cierre
+var close1Nueva = document.getElementById("close1-nueva");
+var close2Nueva = document.getElementById("close2-nueva");
+var close3Nueva = document.getElementById("close3-nueva");
+
+// Funciones para abrir modales
+boton1Nuevo.onclick = function() {
+    modal1Nueva.style.display = "block";
+}
+
+boton2Nuevo.onclick = function() {
+    modal2Nueva.style.display = "block";
+}
+
+boton3Nuevo.onclick = function() {
+    modal3Nueva.style.display = "block";
+}
+
+// Funciones para cerrar modales
+close1Nueva.onclick = function() {
+    modal1Nueva.style.display = "none";
+}
+
+close2Nueva.onclick = function() {
+    modal2Nueva.style.display = "none";
+}
+
+close3Nueva.onclick = function() {
+    modal3Nueva.style.display = "none";
+}
+
+// Cerrar modales si se hace clic fuera de ellas
+window.onclick = function(event) {
+    if (event.target == modal1Nueva) {
+        modal1Nueva.style.display = "none";
+    } else if (event.target == modal2Nueva) {
+        modal2Nueva.style.display = "none";
+    } else if (event.target == modal3Nueva) {
+        modal3Nueva.style.display = "none";
+    }
+}
 })(jQuery);
