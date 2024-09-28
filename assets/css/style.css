@@ -569,7 +569,7 @@ section {
 }
 
 .about .container {
-  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  box-shadow: 0 5px 25px 0 rgba(137, 249, 216, 0.6); 
 }
 
 .about .video-box img {
@@ -587,14 +587,14 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .about .icon-box .icon {
   float: left;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center, justify;
   width: 72px;
   height: 72px;
   background: #f1f7fb;
@@ -604,7 +604,7 @@ section {
 
 .about .icon-box .icon i {
   color: #428bca;
-  font-size: 32px;
+  font-size: 50px;
 }
 
 .about .icon-box:hover .icon {
