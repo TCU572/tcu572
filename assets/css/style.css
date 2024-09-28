@@ -577,8 +577,8 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
-  font-style: italic;
+  text-align: justify;;
+  font-style: normal;
   color: #666;
 }
 
@@ -587,16 +587,16 @@ section {
 }
 
 .about .icon-box + .icon-box {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .about .icon-box .icon {
   float: left;
   display: flex;
   align-items: center;
-  justify-content: center, justify;
-  width: 72px;
-  height: 72px;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
   background: #f1f7fb;
   border-radius: 6px;
   transition: 0.5s;
@@ -604,7 +604,7 @@ section {
 
 .about .icon-box .icon i {
   color: #428bca;
-  font-size: 50px;
+  font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
@@ -636,6 +636,7 @@ section {
   margin-left: 95px;
   line-height: 24px;
   font-size: 14px;
+  text-align: justify;
 }
 
 .about .video-box {
