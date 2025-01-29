@@ -647,7 +647,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+  background: radial-gradient(#27ad75 50%, rgba(66, 139, 202, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1399,7 +1399,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #768fa6;
+  background: #27ad75;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1412,7 +1412,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #428bca;
+  background: #27ad75;
   color: #fff;
   text-decoration: none;
 }
@@ -1437,7 +1437,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #9eccf4;
+  color: #27ad75;
   font-size: 18px;
   line-height: 1;
 }
@@ -1460,7 +1460,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #9eccf4;
+  color: #27ad75;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1486,14 +1486,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #428bca;
+  background: #27ad75;
   color: #fff;
   transition: 0.3s;
   border-radius: 4;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #5295ce;
+  background: #27ad75;
 }
 
 #footer .copyright {
@@ -1509,7 +1509,7 @@ section {
 }
 
 #footer .credits a {
-  color: #9eccf4;
+  color: #27ad75;
 }
 
 .myaccordion {
