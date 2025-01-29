@@ -1524,7 +1524,7 @@ section {
 }
 
 .myaccordion .card-header {
-  border-bottom-color: #3890bd;
+  border-bottom-color: #27ad75;
 }
 
 .myaccordion .fa-stack {
@@ -1534,7 +1534,7 @@ section {
 .myaccordion .btn {
   width: 100%;
   font-weight: bold;
-  color: #004987;
+  color: #27ad75;
   padding: 0;
 }
 
