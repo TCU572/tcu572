@@ -301,7 +301,52 @@
     $('#vrModal').on('shown.bs.modal', function () {
       createVRScene();
     });
+	  
+ // Calendario 
+	   const btn = document.getElementById('calendarBtn');
+
+  // Abrir modal al hacer clic
+  btn.addEventListener('click', () => {
+    $('#calendarModal').modal('show');
+  });
+
+  // Variables para drag
+  let isDragging = false;
+  let startY, startTop;
+
+  btn.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startY = e.clientY;
+    startTop = btn.getBoundingClientRect().top;
+    btn.style.cursor = 'grabbing';
+    e.preventDefault(); // evitar selección de texto
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    btn.style.cursor = 'grab';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    let newTop = startTop + (e.clientY - startY);
+
+    // Limitar el movimiento para que no salga de la ventana
+    const btnHeight = btn.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    if (newTop < 0) newTop = 0;
+    if (newTop > windowHeight - btnHeight) newTop = windowHeight - btnHeight;
+
+    btn.style.top = newTop + 'px';
+    btn.style.transform = 'translateY(0)'; // quitamos translateY cuando movemos
+  });
+	  
   </script>
+
+
+	
 </body>
 
 </html>
