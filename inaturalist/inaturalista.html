@@ -11,12 +11,9 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
   <title>Ciencia Ciudadana</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
 
   <!-- Favicons -->
   <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="icon" />
-  <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="Logos para web TCU 572_64x64px" />
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -35,7 +32,6 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-
       <div class="logo float-left">
         <a href="../index.html"><img src="../assets/img/logos/TC-572-01.png" alt="" class="img-fluid" /></a>
       </div>
@@ -48,17 +44,16 @@
               <li><a href="../about/reserva.html">Reserva</a></li>
               <li><a href="../about/amortiguamiento.html">Zona de Amortiguamiento</a></li>
             </ul>
+          </li>
           <li class="drop-down"><a href="">Documentos</a>
             <ul>
-              <li><a href="#services" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Estudiantes
-                  del TCU</a></li>
+              <li><a href="#services" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Estudiantes del TCU</a></li>
               <li><a href="documents/general_documents.html">Caja de herramientas</a></li>
             </ul>
+          </li>
           <li><a href="../blogs/blogs.html">Blogs</a></li>
           <li><a href="inaturalista.html">Ciencia Ciudadana</a></li>
           <li><a href="#contact">Contacto</a></li>
-          </li>
-          </li>
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -124,26 +119,20 @@
 
           <div class="mx-auto">
             <h3>Redes Sociales</h3>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
             <div class="social-btns text-white">
               <a type="button" class="btn-floating btn-lg btn-fb text-white"><i class="fa fa-facebook"></i></a>
 
-              <a type="button" href="https://www.instagram.com/tcu_572rbamb?igsh=ZW54NmJlbWFkY250"
-                class="btn-floating btn-lg btn-int text-white"><i class="fa fa-instagram"></i></a>
+              <a type="button" href="https://www.instagram.com/tcu_572rbamb?igsh=ZW54NmJlbWFkY250" class="btn-floating btn-lg btn-int text-white"><i class="fa fa-instagram"></i></a>
 
-              <a type="button" href="https://www.youtube.com/channel/UClyI88wlVuh9kv5kgffOfAg"
-                class="btn-floating btn-lg btn-yt.play text-white"><i class="fa fa-youtube-play"></i></a>
+              <a type="button" href="https://www.youtube.com/channel/UClyI88wlVuh9kv5kgffOfAg" class="btn-floating btn-lg btn-yt.play text-white"><i class="fa fa-youtube-play"></i></a>
 
               <!-- Button trigger modal -->
               <a type="button" class="btn-floating btn-lg btn-email text-white" data-toggle="modal" data-target="#exampleModal2">
                 <i class="fa fa-envelope"></i>
               </a>
               <!-- Modal 2 -->
-              <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+              <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -177,17 +166,13 @@
         </div>
       </div>
     </div>
-<div class="container">
-     	 	<div class="credits" ><i
-		class= "text-center" class= "text-white">
-      	 		 © 2025 Universidad de Costa Rica - Última actualización: mayo, 2025 </a>
-      </div>
+    <div class="container">
+      <div class="credits"><i class="text-center text-white">© 2025 Universidad de Costa Rica - Última actualización: mayo, 2025</i></div>
     </div>
-
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <!-- SCRIPTS -->
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
@@ -204,10 +189,9 @@
       scene.style.width = '100%';
       scene.style.height = '100%';
 
-      // Imagen 360° de fondo (sky)    
-      const image360 = '../assets/img/Galeria/Imagen360.jpg'; // ruta a imagen 360
+      // Ruta a tu imagen 360 JPG
+      const image360 = '../assets/img/Galeria/imagen360.jpg';
 
-      // Crear solo la imagen 360
       scene.innerHTML = `
         <a-sky src="${image360}" rotation="0 -90 0"></a-sky>
         <a-camera position="0 1.6 0"></a-camera>
@@ -221,6 +205,7 @@
       createVRScene();
     });
   </script>
+
 </body>
 
 </html>
