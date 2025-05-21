@@ -6,10 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet" />
-  
-  <!-- Solo FontAwesome v5 para evitar conflicto -->
-  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
   <link rel="stylesheet" href="estilos.css" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -34,7 +31,15 @@
   <link href="../assets/css/style.css" rel="stylesheet" />
 
   <style>
-    body, p, h1, h2, h3, h4, h5, h6, a, label {
+    /* Solo texto del cuerpo en negro */
+    #main,
+    #main p,
+    #main h1,
+    #main h2,
+    #main h3,
+    #main h4,
+    #main h5,
+    #main h6 {
       color: black !important;
     }
   </style>
@@ -133,19 +138,22 @@
 
           <div class="mx-auto">
             <h3>Redes Sociales</h3>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
             <div class="social-btns text-white">
-              <a type="button" class="btn-floating btn-lg btn-fb text-white"><i class="fab fa-facebook"></i></a>
+              <a type="button" class="btn-floating btn-lg btn-fb text-white"><i class="fa fa-facebook"></i></a>
 
               <a type="button" href="https://www.instagram.com/tcu_572rbamb?igsh=ZW54NmJlbWFkY250"
-                class="btn-floating btn-lg btn-int text-white"><i class="fab fa-instagram"></i></a>
+                class="btn-floating btn-lg btn-int text-white"><i class="fa fa-instagram"></i></a>
 
               <a type="button" href="https://www.youtube.com/channel/UClyI88wlVuh9kv5kgffOfAg"
-                class="btn-floating btn-lg btn-yt.play text-white"><i class="fab fa-youtube"></i></a>
+                class="btn-floating btn-lg btn-yt.play text-white"><i class="fa fa-youtube-play"></i></a>
 
               <!-- Button trigger modal -->
               <a type="button" class="btn-floating btn-lg btn-email text-white" data-toggle="modal" data-target="#exampleModal2">
-                <i class="fas fa-envelope"></i>
+                <i class="fa fa-envelope"></i>
               </a>
               <!-- Modal 2 -->
               <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -183,15 +191,12 @@
         </div>
       </div>
     </div>
-<div class="container">
-     	 	<div class="credits" ><i
-		class= "text-center" class= "text-white">
-      	 		 © 2025 Universidad de Costa Rica - Última actualización: mayo, 2025 </a>
+    <div class="container">
+      <div class="credits">
+        <i class="text-center text-white"> © 2025 Universidad de Costa Rica - Última actualización: mayo, 2025 </i>
       </div>
     </div>
-		  
-</body>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
   <!-- SCRIPTS -->
 
@@ -211,10 +216,10 @@
       scene.style.width = '100%';
       scene.style.height = '100%';
 
-      // Imagen 360° pública para prueba    
-      const image360 = 'https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg'; 
+      // Imagen 360° de fondo (sky)    
+      const image360 = '../assets/img/Galeria/imagen360.jpg'; // ruta a imagen 360, asegurate que sea JPG
 
-      // Crear el contenido A-Frame con solo la imagen 360
+      // Crear el contenido A-Frame solo con la imagen 360
       scene.innerHTML = `
         <a-sky src="${image360}" rotation="0 -90 0"></a-sky>
         <a-camera position="0 1.6 0"></a-camera>
