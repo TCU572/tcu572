@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet" />
   
-  <!-- Solo FontAwesome v5 para evitar conflicto -->
+    <!-- Solo FontAwesome v5 para evitar conflicto -->
   <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="estilos.css" />
@@ -18,56 +18,205 @@
   <meta content="" name="keywords" />
 
   <!-- Favicons -->
-  <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="icon" />
-  <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="Logos para web TCU 572_64x64px" />
+  <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="icon">
+  <link href="../assets/img/logos/Logos para web TCU 572_64x64px.png" rel="Logos para web TCU 572_64x64px">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet" />
-  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="../assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
+  <!-- ======= Top Bar ======= 
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="icofont-phone"></i> +
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+  -->
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
 
       <div class="logo float-left">
-        <a href="../index.html"><img src="../assets/img/logos/TC-572-01.png" alt="" class="img-fluid" /></a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="../assets/img/logos/TC-572-01.png" alt="" class="img-fluid"></a> 
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="drop-down"><a href="../about/tcu.html">Acerca</a>
+          <li class="drop-down"><a href="about/tcu.html">Acerca</a>
             <ul>
-              <li><a href="../about/tcu.html">TCU-572</a></li>
-              <li><a href="../about/reserva.html">Reserva</a></li>
-              <li><a href="../about/amortiguamiento.html">Zona de Amortiguamiento</a></li>
+              <li><a href="about/tcu.html">TCU-572</a></li>
+              <li><a href="about/reserva.html">Reserva</a></li>
+              <li><a href="about/amortiguamiento.html">Zona de Amortiguamiento</a></li>
             </ul>
           <li class="drop-down"><a href="">Documentos</a>
             <ul>
-              <li><a href="#services" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Estudiantes
-                  del TCU</a></li>
+              <li><a href="#services" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Estudiantes del TCU</a></li>
               <li><a href="documents/general_documents.html">Caja de herramientas</a></li>
             </ul>
-          <li><a href="../blogs/blogs.html">Blogs</a></li>
-          <li><a href="inaturalista.html">Ciencia Ciudadana</a></li>
+          <li><a href="#portfolio">Blogs</a></li>
+          <li><a href="inaturalist/inaturalista.html">Ciencia Ciudadana</a></li>
           <li><a href="#contact">Contacto</a></li>
           </li>
           </li>
         </ul>
-      </nav>
-      <!-- .nav-menu -->
+      </nav><!-- .nav-menu -->
     </div>
-  </header>
-  <!-- End Header -->
+  </header><!-- End Header -->
+
+    <!-- ======= Documents Validation ======= -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ingreso a documentos para estudiantes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                <input type="text" class="form-control" id="textPassword">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">**Si no tiene la contraseña, solicitela a la persona encargada.</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="button">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide1.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Les damos la bienvenida al Blog del TCU-572</span></h2>
+                <p class="animate__animated animate__fadeInUp">Esta es una de las especies de aves que puedes observar dentro de la reserva.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide2.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">¿Querés saber más de la Reserva?</h2>
+                <p class="animate__animated animate__fadeInUp">Tenemos mucha información de importancia acerca de la Reserva. Da clic en el botón.</p>
+                <a href="about/reserva.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide3.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">¿Sabías que la Reserva tiene más de 45 años?</h2>
+                <p class="animate__animated animate__fadeInUp">Tenemos más información de la Reserva por parte de los profesionales. Da clic para conocer más</p>
+                <a href="#aniversary" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide4.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Flora representativa de la reserva</h2>
+                <p class="animate__animated animate__fadeInUp">Ingresa para conocer parte de la flora, frutos y su distribucion en la reserva</p>
+                <a href="about/flora.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Slide 5 -->
+           <div class="carousel-item" style="background-image: url('assets/img/slide/slide6.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Flores y Frutos representativos de la reserva</h2>
+                <p class="animate__animated animate__fadeInUp">Ingresa para conocer parte de la flora, frutos y su distribucion en la reserva</p>
+                <a href="about/frutos.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide5.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">¿Conocés la Legislación Nacional que protege la fauna silvestre de Costa Rica?</h2>
+                <p class="animate__animated animate__fadeInUp">Ingresa para conocer como interactuar con los animales silvestres sin crueldad y respetando la legislación nacional costarricense </p>
+                <a href="about/leyes.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide7.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Diviertete aprendiendo</h2>
+                <p class="animate__animated animate__fadeInUp">Ingresa para jugar a mini juegos como puzzles de National Geographic y preguntas sobre el medio ambiente de la Nasa</p>
+                <a href="about/juegos.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saber Más</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
   <main id="main" class="container my-4">
     <h1 class="text-left mb-4 font-weight-bold">Ciencia Ciudadana</h1>
@@ -180,7 +329,7 @@
 <div class="container">
      	 	<div class="credits" ><i
 		class= "text-center" class= "text-white">
-      	 		 © 2025 Universidad de Costa Rica - Última actualización: mayo, 2025 </a>
+      	 		 © 2025 Universidad de Costa Rica - Última actualización:jhky mayo, 2025 </a>
       </div>
     </div>
 		  
