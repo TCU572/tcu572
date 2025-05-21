@@ -1,67 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ciencia Ciudadana - Reserva TCU-572</title>
 
-  <title>Ciencia Ciudadana</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Font Awesome (opcional para iconos) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 
-  <!-- Librería A-Frame para VR -->
-  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <!-- A-Frame para VR -->
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
-  <!-- Otros estilos y librerías omitidos por brevedad -->
-
+  <!-- Estilos propios o externos -->
   <style>
-    /* Oculta la escena VR al inicio */
-    #vr-scene {
-      display: none;
-      width: 100%;
-      height: 500px;
-      border: 1px solid #ccc;
+    /* Ajuste para modal VR */
+    #vrModal .modal-dialog {
+      max-width: 90vw;
+      height: 80vh;
     }
-    /* Centrar el botón */
-    #start-container {
-      margin: 2rem auto;
-      text-align: center;
+    #vrModal .modal-content {
+      height: 100%;
+    }
+    #vrModal .modal-body {
+      padding: 0;
+      height: calc(100% - 56px); /* altura menos header */
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Contenedor del botón de inicio -->
-  <div id="start-container">
-    <h2>Explorar Reserva en Realidad Virtual</h2>
-    <button id="start-vr-btn" class="btn btn-primary btn-lg">Ingresar a la experiencia VR</button>
+  <!-- Header -->
+  <header class="bg-light p-3 mb-4 d-flex justify-content-between align-items-center">
+    <a href="../index.html">
+      <img src="../assets/img/logos/TC-572-01.png" alt="Logo TCU-572" style="height: 50px;" />
+    </a>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Acerca</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="../about/tcu.html">TCU-572</a>
+            <a class="dropdown-item" href="../about/reserva.html">Reserva</a>
+            <a class="dropdown-item" href="../about/amortiguamiento.html">Zona de Amortiguamiento</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Documentos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#!" data-toggle="modal" data-target="#estudiantesModal">Estudiantes del TCU</a>
+            <a class="dropdown-item" href="documents/general_documents.html">Caja de herramientas</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../blogs/blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="inaturalista.html">Ciencia Ciudadana</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+
+    <h1>Ciencia Ciudadana</h1>
+    <p>Bienvenido a la sección de Ciencia Ciudadana. Aquí encontrarás recursos y actividades para participar.</p>
+
+    <!-- Botón para abrir modal VR -->
+    <button class="btn btn-primary mb-4" data-toggle="modal" data-target="#vrModal">
+      Explorar Reserva en Realidad Virtual
+    </button>
+
+    <!-- Más contenido aquí -->
+
+  </main>
+
+  <!-- Modal VR -->
+  <div class="modal fade" id="vrModal" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel">Experiencia de Realidad Virtual</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Escena A-Frame embebida -->
+          <a-scene embedded style="width: 100%; height: 100%;">
+            <a-sky color="#6EBAA7"></a-sky>
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+            <a-camera position="0 1.6 0"></a-camera>
+          </a-scene>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Escena VR A-Frame oculta al principio -->
-  <a-scene id="vr-scene" embedded>
-    <a-sky color="#6EBAA7"></a-sky>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-    <a-camera position="0 1.6 0"></a-camera>
-  </a-scene>
+  <!-- Modal Estudiantes (ejemplo) -->
+  <div class="modal fade" id="estudiantesModal" tabindex="-1" role="dialog" aria-labelledby="estudiantesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="estudiantesModalLabel">Estudiantes del TCU</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Aquí va el contenido para estudiantes del TCU.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script>
-    const btn = document.getElementById('start-vr-btn');
-    const vrScene = document.getElementById('vr-scene');
-    const startContainer = document.getElementById('start-container');
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 mt-5">
+    <div>
+      Universidad de Costa Rica - Sede de Occidente, San Ramón, Alajuela
+    </div>
+    <div class="mt-2">
+      <a href="https://www.facebook.com" class="text-dark mx-2"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com" class="text-dark mx-2"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
 
-    btn.addEventListener('click', () => {
-      // Oculta el contenedor del botón
-      startContainer.style.display = 'none';
+  <!-- Scripts Bootstrap y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      // Muestra la escena VR
-      vrScene.style.display = 'block';
-    });
-  </script>
-  
-  <!-- Footer, otros scripts y estilos aquí -->
 </body>
-
 </html>
