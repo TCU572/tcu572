@@ -222,4 +222,66 @@ btn.addEventListener("click",
     aos_init();
   });
 
+  // Botón del Calendario 
+
+  const btn = document.getElementById('calendarBtn');
+
+  let isDragging = false;
+  let startY = 0;
+  let startTop = 0;
+  
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+}
+
+function onStartDrag(y) {
+  isDragging = true;
+  startY = y;
+  startTop = parseInt(window.getComputedStyle(btn).top);
+  btn.style.cursor = 'grabbing';
+}
+
+function onDrag(y) {
+  if (!isDragging) return;
+  let dy = y - startY;
+  let newTop = clamp(startTop + dy, 10, window.innerHeight - btn.offsetHeight - 10);
+  btn.style.top = newTop + 'px';
+  btn.style.transform = 'translateY(0)'; // para que no se combine con translateY(-50%)
+}
+
+function onEndDrag() {
+  isDragging = false;
+  btn.style.cursor = 'grab';
+}
+
+// Eventos mouse
+btn.addEventListener('mousedown', e => {
+  e.preventDefault();
+  onStartDrag(e.clientY);
+});
+window.addEventListener('mousemove', e => {
+  onDrag(e.clientY);
+});
+window.addEventListener('mouseup', e => {
+  onEndDrag();
+});
+
+// Eventos touch
+btn.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    e.preventDefault();
+    onStartDrag(e.touches[0].clientY);
+  }
+});
+window.addEventListener('touchmove', e => {
+  if (e.touches.length === 1) {
+    e.preventDefault();
+    onDrag(e.touches[0].clientY);
+  }
+}, { passive: false });
+window.addEventListener('touchend', e => {
+  onEndDrag();
+});
+
+
 })(jQuery);
