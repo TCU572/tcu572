@@ -215,9 +215,39 @@
       	 		 © 2025 Universidad de Costa Rica - Última actualización: mayo, 2025 </a>
       </div>
     </div>
-		  
-</body>
+
+<!-- Botón flotante para calendario -->
+<button id="calendarBtn" class="btn btn-primary" 
+  style="position: fixed; top: 50%; left: 0; transform: translateY(-50%);
+         border-top-right-radius: 8px; border-bottom-right-radius: 8px; 
+         z-index: 1050; cursor: grab; padding: 10px 15px;">
+  📅
+</button>
+
+<!-- Modal para calendario -->
+<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 90vw;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="calendarModalLabel">Calendario de Eventos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe id="calendarIframe" 
+          src="https://calendar.google.com/calendar/u/0?cid=dGN1LmVkdWNhY2lvbmFtYmllbnRhbEBnbWFpbC5jb20" 
+          style="width: 100%; height: 500px; border: none;" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+	  
 </footer><!-- End Footer -->
+	
+</body>
+
+	
 
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
  
