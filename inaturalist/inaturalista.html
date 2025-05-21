@@ -124,7 +124,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ciencia Ciudadana</title>
 
-<a href="reserva-vr.html">Explorar Reserva en Realidad Virtual</a>
+  <h2>Explorar Reserva en Realidad Virtual</h2>
+
+  <!-- Escena VR A-Frame -->
+  <a-scene style="width: 100%; height: 500px;">
+    <!-- Cielo con color (sin imagen 360 aún) -->
+    <a-sky color="#6EBAA7"></a-sky>
+
+    <!-- Objetos 3D para probar la escena -->
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+    <!-- Cámara -->
+    <a-camera position="0 1.6 0"></a-camera>
+  </a-scene>
 	
 </main><!-- End #main -->
 
