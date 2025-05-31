@@ -120,7 +120,7 @@
 
     <!-- Botón para abrir el modal VR -->
     <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal">
-      Explorar Reserva Biológica Alberto Manuel Brenes
+      Explorar la entrada principal de la Reserva Biológica Alberto Manuel Brenes
     </a>
 
   </main>
@@ -131,7 +131,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="vrModalLabel">Realidad Virtual - Reserva Biológica Alberto Manuel Brenes</h5>
+          <h5 class="modal-title" id="vrModalLabel">Entrada principal - Reserva Biológica Alberto Manuel Brenes</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -243,32 +243,37 @@
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
 <script>
-  let scene;
+// Realidad virtual 
+  let iframeAdded = false;
 
   function createVRScene() {
-    if (scene) return; // Ya creada, no hacer doble
+    if (iframeAdded) return;
 
     const container = document.getElementById('vr-container');
-    scene = document.createElement('a-scene');
-    scene.setAttribute('embedded', '');
-    scene.style.width = '100%';
-    scene.style.height = '100%';
+    const iframe = document.createElement('iframe');
 
-    // Imagen 360° pública para prueba    
-    const image360 = 'https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg'; 
+    iframe.src = "https://kuula.co/share/collection/71DKR?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+    iframe.allow = "xr; vr; fullscreen";
 
-    // Crear el contenido A-Frame con solo la imagen 360
-    scene.innerHTML = `
-      <a-sky src="${image360}" rotation="0 -90 0"></a-sky>
-      <a-camera position="0 1.6 0"></a-camera>
-    `;
-
-    container.appendChild(scene);
+    container.appendChild(iframe);
+    iframeAdded = true;
   }
 
   // Crear escena cuando se abra el modal VR
   $('#vrModal').on('shown.bs.modal', function () {
     createVRScene();
+
+    $('.nav-menu').hide();
+    $('.back-to-top').hide();
+  });
+
+  $('#vrModal').on('hidden.bs.modal', function () {
+    $('.nav-menu').show();
+    $('.back-to-top').show();
+  });
 
     // Ocultar menú y botón back-to-top al abrir VR
     $('.nav-menu').hide();
