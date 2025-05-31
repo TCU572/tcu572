@@ -120,13 +120,18 @@
 
     <!-- Botón para abrir el modal VR -->
     <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal">
-      Explorar la entrada principal de la Reserva Biológica Alberto Manuel Brenes
+      Explorar la entrada principal.
+    </a>
+    <!-- Botón para otro recorrido -->
+    <a href="#" class="btn btn-success mt-3 mb-3" data-toggle="modal" data-target="#vrModal2">
+      Explorar la ventana.
     </a>
 
   </main>
   <!-- End #main -->
 
-  <!-- ======= Modal para Realidad Virtual ======= -->
+  <!-- ======= Realidad Virtual entrada principal ======= -->
+  
   <div class="modal fade" id="vrModal" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
       <div class="modal-content">
@@ -142,6 +147,28 @@
       </div>
     </div>
   </div>
+
+  <!-- ======= Realidad Virtual ventana ======= -->
+  
+<div class="modal fade" id="vrModal2" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="vrModalLabel2">Realidad Virtual - Zona de Amortiguamiento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0" style="height: 500px;">
+        <div id="vr-container-2" style="width: 100%; height: 100%; background: #222;">
+          <iframe src="https://kuula.co/share/collection/71Dbf?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+                  width="100%" height="100%" style="border: none;" allowfullscreen allow="xr; vr; fullscreen">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -284,6 +311,18 @@
     $('.nav-menu').show();
     $('.back-to-top').show();
   });
+
+  // Segundo recorrido
+$('#vrModal2').on('shown.bs.modal', function () {
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
+
+$('#vrModal2').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+});
+
 </script>
 
 </body>
