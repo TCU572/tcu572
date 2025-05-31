@@ -61,15 +61,16 @@
     Explora la Reserva Biológica Alberto Manuel Brenes de manera inmersiva y aprende cómo puedes formar parte de esta iniciativa mediante una realidad virtual. Haz clic en el botón para ingresar y comenzar la aventura.
   </p>
   <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal">
-    Explorar Reserva Biológica Alberto Manuel Brenes, entrada principal.
+    Explorar Reserva Biológica Alberto Manuel Brenes
   </a>
 </main>
 
+<!-- Modal para la experiencia de realidad virtual -->
 <div class="modal fade" id="vrModal" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="vrModalLabel">Entrada principal - Reserva Biológica Alberto Manuel Brenes</h5>
+        <h5 class="modal-title" id="vrModalLabel">Realidad Virtual - Reserva Biológica Alberto Manuel Brenes</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -114,6 +115,7 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 </footer>
 
+<!-- Scripts -->
 <script src="../assets/vendor/jquery/jquery.min.js"></script>
 <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -128,30 +130,30 @@
 <script src="../assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
 
-  <script>
-    // Cuando se muestre el modal, insertar el iframe de Kuula
-    $('#vrModal').on('shown.bs.modal', function () {
+<script>
+  let iframeInserted = false;
+  $('#vrModal').on('shown.bs.modal', function () {
+    if (!iframeInserted) {
       const container = document.getElementById('vr-container');
       container.innerHTML = `
-        <iframe width="100%" height="100%" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" 
+        <iframe width="100%" height="100%" frameborder="0"
+          allow="xr-spatial-tracking; gyroscope; accelerometer"
+          allowfullscreen scrolling="no"
           src="https://kuula.co/share/collection/71DKR?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
         </iframe>
       `;
+      iframeInserted = true;
+    }
+    $('.nav-menu').hide();
+    $('.back-to-top').hide();
+  });
 
-      // Ocultar menú y botón back-to-top al abrir VR
-      $('.nav-menu').hide();
-      $('.back-to-top').hide();
-    });
+  $('#vrModal').on('hidden.bs.modal', function () {
+    $('.nav-menu').show();
+    $('.back-to-top').show();
+  });
+</script>
 
-    // Cuando se cierre el modal, limpiar el iframe y mostrar menú
-    $('#vrModal').on('hidden.bs.modal', function () {
-      $('#vr-container').html('');
-      $('.nav-menu').show();
-      $('.back-to-top').show();
-    });
-  </script>
-  
 </body>
 </html>
