@@ -120,7 +120,7 @@
 
     <!-- Botón para abrir el modal VR -->
     <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal">
-      Explorar de la Reserva Biológica Alberto Manuel Brenes, entrada principal. 
+      Explorar Reserva Biológica Alberto Manuel Brenes
     </a>
 
   </main>
@@ -131,7 +131,7 @@
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="vrModalLabel">Realidad Virtual - Reserva Biológica Alberto Manuel Brenes.</h5>
+          <h5 class="modal-title" id="vrModalLabel">Realidad Virtual - Reserva Biológica Alberto Manuel Brenes</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -255,13 +255,13 @@
     scene.style.height = '100%';
 
     // Imagen 360° pública para prueba    
-    const image360 = 'assets/img/Realidad virtual/entrada principal .jpg'; 
+    const image360 = 'https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg'; 
 
     // Crear el contenido A-Frame con solo la imagen 360
-    scene.innerHTML = 
+    scene.innerHTML = `
       <a-sky src="${image360}" rotation="0 -90 0"></a-sky>
       <a-camera position="0 1.6 0"></a-camera>
-    ;
+    `;
 
     container.appendChild(scene);
   }
