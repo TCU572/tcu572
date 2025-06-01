@@ -188,7 +188,7 @@
       Explorar el arollo
     </a>
     
-    <!-- Arollo-->
+    <!-- Sendero Fila-->
     <h2 class="text-left mb-4 font-weight-bold">Sendero Fila </h2>
 
     <p class="description">
@@ -201,6 +201,37 @@
     <!-- Botón para abrir el modal VR Sendero Fila-->
     <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal6">
       Explorar el sendero Fila
+    </a> 
+
+    <!-- Cruce de senderos-->
+    <h2 class="text-left mb-4 font-weight-bold">Cruce de senderos </h2>
+
+    <p class="description">
+    Tú sabes que somos de calle, hay cría y corazón
+    Siente el fuego, las reglas del juego, las pongo yo
+    Porque somos de calle, hay cría y corazón
+    Siente el fuego, las reglas del juego, las pongo yo
+    </p>
+
+    <!-- Botón para abrir el modal VR Cruce de senderos-->
+    <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal7">
+      Explorar el cruce de senderos
+    </a> 
+    
+    <!-- Sendero Terciopelo-->
+    <h2 class="text-left mb-4 font-weight-bold">Sendero Terciopelo </h2>
+
+    <p class="description">
+    Yo sí soy de la calle, lo que no soy es gangster ni matón
+    (Welcome to the remix!)
+    No te confundas, tampoco alicate ni mamón
+    Yo soy cantante, te lo demuestro en mi canción
+    (History, baby!)
+    </p>
+
+    <!-- Botón para abrir el modal VR Cruce de senderos-->
+    <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal8">
+      Explorar el sendero Terciopelo
     </a> 
     
   </main>
@@ -291,7 +322,7 @@
     </div>
   </div>
 
-        <!-- ======= Modal para Realidad Virtual6 ======= -->
+  <!-- ======= Modal para Realidad Virtual6 ======= -->
   <div class="modal fade" id="vrModal6" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel6" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
       <div class="modal-content">
@@ -303,6 +334,40 @@
         </div>
         <div class="modal-body p-0" style="height: 500px;">
           <div id="vr-container6" style="width: 100%; height: 100%; background: #222;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ======= Modal para Realidad Virtual7 ======= -->
+  <div class="modal fade" id="vrModal7" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel7">Cruce de senderos - Reserva Biológica Alberto Manuel Brenes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" style="height: 500px;">
+          <div id="vr-container7" style="width: 100%; height: 100%; background: #222;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Modal para Realidad Virtual8 ======= -->
+  <div class="modal fade" id="vrModal8" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel8">Sendero Terciopelo - Reserva Biológica Alberto Manuel Brenes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" style="height: 500px;">
+          <div id="vr-container7" style="width: 100%; height: 100%; background: #222;"></div>
         </div>
       </div>
     </div>
@@ -528,9 +593,9 @@ $('#vrModal5').on('hidden.bs.modal', function () {
 }); 
 
    // botón sendero fila
- $('#vrModal5').on('shown.bs.modal', function () {
+ $('#vrModal6').on('shown.bs.modal', function () {
   if (!iframeInserted2) {
-    const container = document.getElementById('vr-container5');
+    const container = document.getElementById('vr-container6');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
@@ -549,6 +614,52 @@ $('#vrModal6').on('hidden.bs.modal', function () {
   $('.nav-menu').show();
   $('.back-to-top').show();
 }); 
+
+// botón cruce de senderos
+ $('#vrModal7').on('shown.bs.modal', function () {
+  if (!iframeInserted2) {
+    const container = document.getElementById('vr-container7');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71DC3?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted2 = true;
+  }
+
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
+
+$('#vrModal6').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+}); 
+
+    // botón Sendero terciopleo
+ $('#vrModal8').on('shown.bs.modal', function () {
+  if (!iframeInserted2) {
+    const container = document.getElementById('vr-container8');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71DCQ?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted2 = true;
+  }
+
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
+
+$('#vrModal6').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+});
   
 </script>
 
