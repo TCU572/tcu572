@@ -183,10 +183,25 @@
     Nunca cambiaré
     </p>
 
-    <!-- Botón para abrir el modal VR Río San Lorencito-->
+    <!-- Botón para abrir el modal VR Arollo-->
     <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal5">
       Explorar el arollo
     </a>
+    
+    <!-- Arollo-->
+    <h2 class="text-left mb-4 font-weight-bold">Sendero Fila </h2>
+
+    <p class="description">
+    Zúmbale mambo, pa' que mis gatas prendan los motore'
+    Zúmbale mambo, pa' que mis gatas prendan los motore'
+    Zúmbale mambo, pa' que mis gatas prendan los motore'
+    Que se preparen, que lo que viene es pa' que le den (¡duro!)
+    </p>
+
+    <!-- Botón para abrir el modal VR Sendero Fila-->
+    <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal6">
+      Explorar el sendero Fila
+    </a> 
     
   </main>
   <!-- End #main -->
@@ -225,7 +240,7 @@
     </div>
   </div>
 
-    <!-- ======= Modal para Realidad Virtual2 ======= -->
+    <!-- ======= Modal para Realidad Virtual3 ======= -->
   <div class="modal fade" id="vrModal3" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
       <div class="modal-content">
@@ -237,6 +252,57 @@
         </div>
         <div class="modal-body p-0" style="height: 500px;">
           <div id="vr-container3" style="width: 100%; height: 100%; background: #222;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- ======= Modal para Realidad Virtual4 ======= -->
+  <div class="modal fade" id="vrModal4" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel3">Río San Lorencito - Reserva Biológica Alberto Manuel Brenes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" style="height: 500px;">
+          <div id="vr-container4" style="width: 100%; height: 100%; background: #222;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- ======= Modal para Realidad Virtual5 ======= -->
+  <div class="modal fade" id="vrModal5" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel5">Arollo - Reserva Biológica Alberto Manuel Brenes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" style="height: 500px;">
+          <div id="vr-container5" style="width: 100%; height: 100%; background: #222;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- ======= Modal para Realidad Virtual6 ======= -->
+  <div class="modal fade" id="vrModal6" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="vrModalLabel6">Sendero Fila - Reserva Biológica Alberto Manuel Brenes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0" style="height: 500px;">
+          <div id="vr-container6" style="width: 100%; height: 100%; background: #222;"></div>
         </div>
       </div>
     </div>
@@ -460,6 +526,30 @@ $('#vrModal5').on('hidden.bs.modal', function () {
   $('.nav-menu').show();
   $('.back-to-top').show();
 }); 
+
+   // botón sendero fila
+ $('#vrModal5').on('shown.bs.modal', function () {
+  if (!iframeInserted2) {
+    const container = document.getElementById('vr-container5');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71DCw?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted2 = true;
+  }
+
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
+
+$('#vrModal6').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+}); 
+  
 </script>
 
 </body>
