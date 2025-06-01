@@ -173,7 +173,21 @@
       Explorar el Río San Lorencito
     </a>
   
-  
+    <!-- Río San Lorencito-->
+    <h2 class="text-left mb-4 font-weight-bold">Arollo </h2>
+
+    <p class="description">
+    ¿A quién le importa lo que yo haga?
+    ¿A quién le importa lo que yo diga?
+    Yo soy así, así seguiré
+    Nunca cambiaré
+    </p>
+
+    <!-- Botón para abrir el modal VR Río San Lorencito-->
+    <a href="#" class="btn btn-primary mt-3 mb-3" data-toggle="modal" data-target="#vrModal5">
+      Explorar el arollo
+    </a>
+    
   </main>
   <!-- End #main -->
 
@@ -396,12 +410,12 @@ $('#vrModal2').on('hidden.bs.modal', function () {
   $('.back-to-top').hide();
 });
 
-$('#vrModal2').on('hidden.bs.modal', function () {
+$('#vrModal3').on('hidden.bs.modal', function () {
   $('.nav-menu').show();
   $('.back-to-top').show();
 });
   
-  // botón segunda entrada 
+  // botón Río San Lorenzo
  $('#vrModal4').on('shown.bs.modal', function () {
   if (!iframeInserted2) {
     const container = document.getElementById('vr-container4');
@@ -419,11 +433,33 @@ $('#vrModal2').on('hidden.bs.modal', function () {
   $('.back-to-top').hide();
 });
 
-$('#vrModal2').on('hidden.bs.modal', function () {
+$('#vrModal4').on('hidden.bs.modal', function () {
   $('.nav-menu').show();
   $('.back-to-top').show();
 });
-  
+
+   // botón arollo
+ $('#vrModal5').on('shown.bs.modal', function () {
+  if (!iframeInserted2) {
+    const container = document.getElementById('vr-container5');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71DxB?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted2 = true;
+  }
+
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
+
+$('#vrModal5').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+}); 
 </script>
 
 </body>
