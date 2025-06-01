@@ -263,87 +263,55 @@
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
 <script>
-  
-// Realidad virtual 
-  let iframeInserted = false;
-  
-  $('#vrModal').on('shown.bs.modal', function () {
-    if (!iframeInserted) 
-    {
-      const container = document.getElementById('vr-container');
-      container.innerHTML = `
-        <iframe width="100%" height="100%" frameborder="0"
-          allow="xr-spatial-tracking; gyroscope; accelerometer"
-          allowfullscreen scrolling="no"
-          src="https://kuula.co/share/collection/71DKR?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
-        </iframe>
-      `;
-      iframeInserted = true;
-    }
-    
-  let iframeInserted = false;
-  
-  $('#vrModal2').on('shown.bs.modal', function () {
-    if (!iframeInserted) 
-    {
-      const container = document.getElementById('vr-container2');
-      container.innerHTML = `
-        <iframe width="100%" height="100%" frameborder="0"
-          allow="xr-spatial-tracking; gyroscope; accelerometer"
-          allowfullscreen scrolling="no"
-          src="https://kuula.co/share/collection/71Dbf?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
-        </iframe>
-      `;
-      iframeInserted = true;
-    }
-    
-  // Crear escena cuando se abra el modal VR entrada principal
-  $('#vrModal').on('shown.bs.modal', function () {
-    createVRScene();
+// realidad virtual
+let iframeInserted1 = false;
+let iframeInserted2 = false;
 
-    $('.nav-menu').hide();
-    $('.back-to-top').hide();
-  });
+$('#vrModal').on('shown.bs.modal', function () {
+  if (!iframeInserted1) {
+    const container = document.getElementById('vr-container');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71DKR?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted1 = true;
+  }
 
-  $('#vrModal').on('hidden.bs.modal', function () {
-    $('.nav-menu').show();
-    $('.back-to-top').show();
-  });
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
 
-    // Ocultar menú y botón back-to-top al abrir VR
-    $('.nav-menu').hide();
-    $('.back-to-top').hide();
-  });
+$('#vrModal').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+});
 
-  // Mostrar menú y botón back-to-top al cerrar VR
-  $('#vrModal').on('hidden.bs.modal', function () {
-    $('.nav-menu').show();
-    $('.back-to-top').show();
-  });
 
-    // Crear escena cuando se abra el modal VR ventana
-  $('#vrModal2').on('shown.bs.modal', function () {
-    createVRScene();
+$('#vrModal2').on('shown.bs.modal', function () {
+  if (!iframeInserted2) {
+    const container = document.getElementById('vr-container2');
+    container.innerHTML = `
+      <iframe width="100%" height="100%" frameborder="0"
+        allow="xr-spatial-tracking; gyroscope; accelerometer"
+        allowfullscreen scrolling="no"
+        src="https://kuula.co/share/collection/71Dbf?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+      </iframe>
+    `;
+    iframeInserted2 = true;
+  }
 
-    $('.nav-menu').hide();
-    $('.back-to-top').hide();
-  });
+  $('.nav-menu').hide();
+  $('.back-to-top').hide();
+});
 
-  $('#vrModal2').on('hidden.bs.modal', function () {
-    $('.nav-menu').show();
-    $('.back-to-top').show();
-  });
+$('#vrModal2').on('hidden.bs.modal', function () {
+  $('.nav-menu').show();
+  $('.back-to-top').show();
+});
 
-    // Ocultar menú y botón back-to-top al abrir VR
-    $('.nav-menu').hide();
-    $('.back-to-top').hide();
-  });
-
-  // Mostrar menú y botón back-to-top al cerrar VR
-  $('#vrModal2').on('hidden.bs.modal', function () {
-    $('.nav-menu').show();
-    $('.back-to-top').show();
-  });
 </script>
 
 </body>
