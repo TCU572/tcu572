@@ -99,28 +99,7 @@
     </div>
   </div>
 
-  <!-- Modal VR ventana -->
-  <div class="modal fade" id="vrModal2" tabindex="-1" role="dialog" aria-labelledby="vrModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 90vw;">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Ventana - Reserva Biológica Alberto Manuel Brenes</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body p-0" style="height: 500px;">
-          <iframe width="100%" height="100%" frameborder="0"
-            allow="xr-spatial-tracking; gyroscope; accelerometer"
-            allowfullscreen scrolling="no"
-            src="https://kuula.co/share/collection/71Hq6?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
+    <!-- Footer -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -169,12 +148,6 @@
       $('.nav-menu, .back-to-top').hide();
     });
     $('#vrModal').on('hidden.bs.modal', function () {
-      $('.nav-menu, .back-to-top').show();
-    });
-    $('#vrModal2').on('shown.bs.modal', function () {
-      $('.nav-menu, .back-to-top').hide();
-    });
-    $('#vrModal2').on('hidden.bs.modal', function () {
       $('.nav-menu, .back-to-top').show();
     });
   </script>
