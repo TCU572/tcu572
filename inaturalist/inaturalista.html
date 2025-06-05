@@ -490,7 +490,13 @@
 // realidad virtual
 let iframeInserted1 = false;
 let iframeInserted2 = false;
-
+let iframeInserted3 = false;
+let iframeInserted4 = false;
+let iframeInserted5 = false;
+let iframeInserted6 = false;
+let iframeInserted7 = false;
+let iframeInserted8 = false;
+  
 // botón entrada principal
 $('#vrModal').on('shown.bs.modal', function () {
   if (!iframeInserted1) {
@@ -523,7 +529,7 @@ $('#vrModal2').on('shown.bs.modal', function () {
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71Dbf?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71Dbf?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
     iframeInserted2 = true;
@@ -540,16 +546,16 @@ $('#vrModal2').on('hidden.bs.modal', function () {
 
  // botón segunda entrada 
  $('#vrModal3').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted3) {
     const container = document.getElementById('vr-container3');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71Dxg?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71Dxg?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted3 = true;
   }
 
   $('.nav-menu').hide();
@@ -563,16 +569,16 @@ $('#vrModal3').on('hidden.bs.modal', function () {
   
   // botón Río San Lorenzo
  $('#vrModal4').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted4) {
     const container = document.getElementById('vr-container4');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71DxB?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71DxB?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted4 = true;
   }
 
   $('.nav-menu').hide();
@@ -586,16 +592,16 @@ $('#vrModal4').on('hidden.bs.modal', function () {
 
    // botón arroyo
  $('#vrModal5').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted5) {
     const container = document.getElementById('vr-container5');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71DCt?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71DCt?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted5 = true;
   }
 
   $('.nav-menu').hide();
@@ -609,16 +615,16 @@ $('#vrModal5').on('hidden.bs.modal', function () {
 
    // botón sendero fila
  $('#vrModal6').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted6) {
     const container = document.getElementById('vr-container6');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71DCw?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71DCw?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted6 = true;
   }
 
   $('.nav-menu').hide();
@@ -632,16 +638,16 @@ $('#vrModal6').on('hidden.bs.modal', function () {
 
 // botón cruce de senderos
  $('#vrModal7').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted7) {
     const container = document.getElementById('vr-container7');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71DC3?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71DC3?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted7 = true;
   }
 
   $('.nav-menu').hide();
@@ -655,16 +661,16 @@ $('#vrModal7').on('hidden.bs.modal', function () {
 
     // botón Sendero terciopleo
  $('#vrModal8').on('shown.bs.modal', function () {
-  if (!iframeInserted2) {
+  if (!iframeInserted8) {
     const container = document.getElementById('vr-container8');
     container.innerHTML = `
       <iframe width="100%" height="100%" frameborder="0"
         allow="xr-spatial-tracking; gyroscope; accelerometer"
         allowfullscreen scrolling="no"
-        src="https://kuula.co/share/collection/71DCQ?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1">
+        src="https://kuula.co/share/collection/71DCQ?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1">
       </iframe>
     `;
-    iframeInserted2 = true;
+    iframeInserted8 = true;
   }
 
   $('.nav-menu').hide();
